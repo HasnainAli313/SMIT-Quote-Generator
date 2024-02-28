@@ -11,6 +11,10 @@ function generateQuote() {
       "When I am in the battlefield, I love it more than my wedding night with the most beautiful of women. ― 'Khalid ibn al-Walid(RA)'",
       "Do not say that! How few are the Romans and how numerous are we ! 'An army's strength lies not in numbers of men but in Allah's help, and its weakness lies in being forsaken by Allah - 'Khalid ibn al-Walid(RA)'",
     ];
-    let randomNumber = Math.floor(Math.random() * 6 + 1);
+    // generate a random number and multiple with 10 to make 0-9, 10 numbers and make it integer by taking Math.floor()
+    let randomNumber = Math.floor(Math.random() * 10);
+    // give random number as index number to return value of index number
     let quote = document.getElementById("quote").innerHTML=quotes[randomNumber];
+    
+   
   }
